@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function createWindLink(elem, num) {
-      const mainPath = "imgs/header/imgs";
+      const mainPath = "./imgs/header/imgs";
       let score = Number(num) * 4;
       const currLength = headerFootWindowArray.length;
       for (let i = 0; i < currLength; i++) {
@@ -127,9 +127,8 @@ document.addEventListener("DOMContentLoaded", () => {
         currLink.classList.add("blank-a");
         currP.textContent = headerFootWindowArray[score];
         currLink.append(currP);
-        currLink.style.backgroundImage = `url(${mainPath}/img-${
-          score + 1
-        }.jpg)`;
+        currLink.style.backgroundImage = `url(${mainPath}/img-${score + 1
+          }.jpg)`;
         elem.append(currLink);
         score++;
       }

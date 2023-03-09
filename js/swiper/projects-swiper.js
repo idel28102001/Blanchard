@@ -5,7 +5,7 @@ window.addEventListener("DOMContentLoaded", () => {
         //ГОТОВО ДЛЯ ЗАМЕНЫ
         //ГОТОВО ДЛЯ ЗАМЕНЫ
         {
-            const mainPath = `/imgs/projects`;
+            const mainPath = `./imgs/projects`;
             const wrapper = document.querySelector("#projects__wrapper");
             for (let currI = 0; currI < 9; currI++) {
                 const currSlide = document.createElement("div"); //

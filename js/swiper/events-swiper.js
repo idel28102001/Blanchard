@@ -2,7 +2,7 @@ window.addEventListener("DOMContentLoaded", () => {
   (() => {
     const swiperElem = document.querySelector("#events__swiper");
     swiperElem.classList.add("events__swiper-flex");
-    const mainPath = `/imgs/events`;
+    const mainPath = `./imgs/events`;
     const mainResolutions = [600, 1000, 1300];
     const mainImgPathPart = [`/Desktop-1920`];
     const addImgPaths = ["/Mobile-320", "/Tablet-768", "/Tablet-1024"];

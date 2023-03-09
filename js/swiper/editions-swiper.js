@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     (() => {
         const swiperElem = document.querySelector("#editions__swiper");
-        const mainPath = `/imgs/editions`;
+        const mainPath = `./imgs/editions`;
         const mainResolutions = [600, 1000, 1300];
         const mainImgPathPart = [`/Desktop-1920`];
         const addImgPaths = ["/Mobile-320", "/Tablet-768", "/Tablet-1024"];

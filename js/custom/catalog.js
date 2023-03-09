@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     (() => {
-        mainPath = "/imgs/catalog";
+        mainPath = "./imgs/catalog";
         path = `${mainPath}/Icons/langs-flags`;
         const tab = document.querySelector(".tab");
         for (let curr in catalogFlags) {

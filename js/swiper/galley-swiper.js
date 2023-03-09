@@ -1,7 +1,7 @@
 window.addEventListener("DOMContentLoaded", () => {
     (() => {
         const swiperElem = document.querySelector(".gallery__swiper");
-        const mainPath = `/imgs/gallery`;
+        const mainPath = `./imgs/gallery`;
         const impPathPart = `gallery-img-`;
         const mainResolutions = [600, 1000, 1300];
         const mainImgPathPart = [`/Desktop-1920`, `/${impPathPart}desktop-1920-`];
@@ -88,9 +88,8 @@ window.addEventListener("DOMContentLoaded", () => {
             const currImg = document.createElement("picture");
             for (let n = 0; n < addImgPaths.length; n++) {
                 const addPart = document.createElement("source");
-                const path = `${mainPath}${addImgPaths[n][0]}${addImgPaths[n][1]}${
-          currI + 1
-        }.jpg`;
+                const path = `${mainPath}${addImgPaths[n][0]}${addImgPaths[n][1]}${currI + 1
+                    }.jpg`;
                 addPart.srcset = `${mainPath}/icons/1x1.png`;
                 addPart.setAttribute("data-srcset", path);
                 addPart.media = `(max-width: ${mainResolutions[n]}px)`;
@@ -98,9 +97,8 @@ window.addEventListener("DOMContentLoaded", () => {
             }
             const mainPart = document.createElement("img");
 
-            const path = `${mainPath}${mainImgPathPart[0]}${mainImgPathPart[1]}${
-        currI + 1
-      }.jpg`;
+            const path = `${mainPath}${mainImgPathPart[0]}${mainImgPathPart[1]}${currI + 1
+                }.jpg`;
             mainPart.src = `${mainPath}/icons/1x1.png`;
             currImg.setAttribute("data-id", currI + 1);
             mainPart.setAttribute("data-src", path);

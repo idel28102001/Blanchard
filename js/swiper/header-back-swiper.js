@@ -1,7 +1,7 @@
 window.addEventListener("DOMContentLoaded", () => {
   (() => {
     const swiperElem = document.querySelector(".header-hero__swiper");
-    const mainPath = `/imgs/hero-back`;
+    const mainPath = `./imgs/hero-back`;
     const mainResolutions = [600, 1000, 1300];
     const mainImgPathPart = [`/hero-back-descktop-1920`];
     const addImgPaths = [
